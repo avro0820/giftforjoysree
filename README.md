@@ -48,7 +48,7 @@ git branch -M main
 git add -A
 git commit -m "Prepare site for GitHub Pages"
 # Create a repo on GitHub named 'giftforjoysree' and paste your repo URL below
-git remote add origin https://github.com/<your-github-username>/giftforjoysree.git
+git remote add origin https://github.com/<avro0820>/giftforjoysree.git
 git push -u origin main
 ```
 
@@ -74,5 +74,6 @@ If you upload the ZIP to GitHub, extract it locally and upload the extracted fil
 ## Need help?
 - Reply **Push for me** if you want me to push this repository to GitHub for you (I will need a short-lived GitHub PAT with repo/workflow access if you prefer me to push), or
 - Reply **Show me how** and I’ll give step-by-step screenshots and commands tailored for your system.
+
 
 If you'd like, I can also update this README to include your GitHub username and the exact Pages URL once you give it to me.
