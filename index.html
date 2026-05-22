@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A SPECIAL GIFT FOR MY DEAR JOYSREE</title>
+    <title>Happy Birthday Gift For Joysree ❤️</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
@@ -12,21 +12,22 @@
         * { box-sizing: border-box; }
         body {
             margin: 0;
-            overflow-x: hidden;
+            overflow: hidden;
             font-family: 'Segoe UI', 'Inter', sans-serif;
             min-height: 100vh;
             background: linear-gradient(135deg, #fce7f3, #fbcfe8, #f9a8d4);
         }
-        #app { position: relative; width: 100%; min-height: 100vh; }
+        #app { position: relative; width: 100%; height: 100vh; }
         #content {
-            position: relative; z-index: 10; width: 100%; min-height: 100vh;
+            position: relative; z-index: 10; width: 100%; height: 100vh;
             display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px;
         }
         .step {
             position: absolute; width: 100%; max-width: 850px; max-height: 90vh; overflow-y: auto;
-            padding: 30px; background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px);
+            padding: 30px; background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px);
             border-radius: 24px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12); text-align: center;
-            opacity: 0; transform: translateY(25px); transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1); pointer-events: none;
+            opacity: 0; transform: translateY(25px); transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1); 
+            pointer-events: none;
         }
         .step.active { opacity: 1; transform: translateY(0); pointer-events: all; }
         .btn {
@@ -63,35 +64,24 @@
         #cake .layer { height: 32px; border-radius: 10px; background: linear-gradient(180deg, #fff5f7, #ffd6e7); box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 5px; }
         #cake .candles { display: flex; gap: 10px; justify-content: center; position: absolute; left: 0; right: 0; top: -24px; }
         .candle { width: 8px; height: 24px; background: white; border-radius: 3px; position: relative; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-        .flame { position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 10px; height: 14px; background: radial-gradient(circle at 30% 30%, #ffd166, #ff6b6b); border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; }
-        .gallery-container { width: 100%; max-width: 600px; margin: 0 auto; }
+        .flame { position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 10px; height: 14px; background: radial-gradient(circle at 30% 30%, #ffd166, #ff6b6b); border-radius: 50%; opacity: 0.9; }
         #photo-gallery { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
-        .gallery-img { width: 150px; height: 150px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); cursor: pointer; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); border: 3px solid white; }
+        .gallery-img { width: 150px; height: 150px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); cursor: pointer; transition: transform 0.4s; }
         .gallery-img:hover { transform: translateY(-8px) scale(1.04); box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18); }
-        #carousel { pointer-events: auto; position: relative; width: 100%; max-width: 550px; margin: 0 auto; }
-        #carousel-slides { display: flex; will-change: transform; }
-        #carousel-slides img { width: 100%; height: 350px; object-fit: contain; display: block; border-radius: 16px; background: rgba(0,0,0,0.03); }
-        .carousel-slide { min-width: 100%; box-sizing: border-box; flex-shrink: 0; padding: 0 4px; }
-        #carousel-dots { text-align: center; margin-top: 12px; }
-        #carousel-dots button { background: transparent; border: 2px solid rgba(0,0,0,0.15); width: 12px; height: 12px; border-radius: 50%; margin: 0 5px; display: inline-block; cursor: pointer; transition: all 0.3s; }
-        #carousel-dots button.active { background: linear-gradient(90deg, #ec4899, #f43f5e); border-color: transparent; transform: scale(1.2); }
-        .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.95); border: none; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; transition: all 0.2s; color: #ec4899; }
-        .carousel-btn:hover { background: white; transform: translateY(-50%) scale(1.1); }
-        #carousel-prev { left: -22px; }
-        #carousel-next { right: -22px; }
         #edit-toggle {
             position: fixed; top: 16px; right: 16px; z-index: 200; background: rgba(255, 255, 255, 0.95);
-            border: none; padding: 10px 18px; border-radius: 10px; cursor: pointer;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12); font-size: 14px; font-weight: 600; color: #374151; transition: all 0.2s;
+            border: 2px solid #ec4899; padding: 10px 18px; border-radius: 10px; cursor: pointer;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12); font-size: 14px; font-weight: 600; color: #ec4899; transition: all 0.2s;
         }
-        #edit-toggle:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.18); }
+        #edit-toggle:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.3); }
         #editor-modal {
             position: fixed; inset: 0; display: none; z-index: 300; align-items: center; justify-content: center;
-            background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(4px);
+            background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(4px);
         }
+        #editor-modal.show { display: flex; }
         #editor-modal .panel { background: white; border-radius: 20px; padding: 28px; width: 95%; max-width: 700px; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25); }
         #editor-modal label { display: block; font-weight: 600; margin-top: 16px; font-size: 14px; color: #374151; }
-        #editor-modal input[type="text"], #editor-modal textarea, #editor-modal select { width: 100%; padding: 10px 14px; margin-top: 6px; border-radius: 10px; border: 2px solid #e5e7eb; font-size: 15px; transition: border-color 0.2s; }
+        #editor-modal input[type="text"], #editor-modal textarea, #editor-modal select { width: 100%; padding: 10px 14px; margin-top: 6px; border-radius: 10px; border: 2px solid #e5e7eb; font-size: 14px; }
         #editor-modal input:focus, #editor-modal textarea:focus, #editor-modal select:focus { border-color: #ec4899; outline: none; }
         #editor-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; flex-wrap: wrap; }
         .editor-btn { padding: 10px 18px; border-radius: 10px; border: none; cursor: pointer; font-size: 14px; font-weight: 600; transition: all 0.2s; }
@@ -99,148 +89,105 @@
         .editor-primary:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(236,72,153,0.3); }
         .editor-ghost { background: #f3f4f6; color: #374151; }
         .editor-ghost:hover { background: #e5e7eb; }
-        #photo-list { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
-        .photo-thumb { position: relative; }
-        .photo-thumb img { height: 70px; width: 70px; object-fit: cover; border-radius: 10px; border: 2px solid #e5e7eb; }
-        .photo-remove { position: absolute; top: -6px; right: -6px; background: #ef4444; color: white; border: none; width: 22px; height: 22px; border-radius: 50%; cursor: pointer; font-size: 12px; display: flex; align-items: center; justify-content: center; }
-        #photo-viewer { position: fixed; inset: 0; z-index: 500; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.92); backdrop-filter: blur(8px); cursor: pointer; }
-        #photo-viewer img { max-width: 95%; max-height: 90vh; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
-        #photo-viewer-close { position: absolute; top: 20px; right: 20px; background: white; border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; font-size: 24px; color: #374151; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
         @media (max-width: 640px) {
             .step { padding: 20px; max-height: 95vh; }
             .btn { padding: 12px 22px; font-size: 15px; }
             .gallery-img { width: 100px; height: 100px; }
-            #carousel-slides img { height: 250px; }
-            .carousel-btn { width: 36px; height: 36px; font-size: 16px; }
-            #carousel-prev { left: 4px; }
-            #carousel-next { right: 4px; }
         }
     </style>
 </head>
 <body>
     <div id="app">
         <div id="canvas-container"></div>
-        <button id="edit-toggle">&#9999;&#65039; Edit Page</button>
-        <div id="editor-modal" aria-hidden="true">
+        <button id="edit-toggle">✏️ Edit</button>
+        
+        <div id="editor-modal">
             <div class="panel">
-                <h3 style="margin:0 0 8px 0;font-size:20px;font-weight:700" class="text-gradient">Customize This Page</h3>
-                <p style="margin:0 0 16px 0;color:#6b7280;font-size:13px">All changes are saved to your browser. Use Download to get a deployable file.</p>
-                <label for="input-greeting">Greeting</label>
-                <input id="input-greeting" type="text" placeholder="Happy Birthday to my dear..." />
-                <label for="input-birthday-heading">Birthday Heading</label>
-                <input id="input-birthday-heading" type="text" placeholder="Happy Birthday to you!" />
-                <label for="input-birthday-message">Birthday Message</label>
-                <textarea id="input-birthday-message" rows="4" placeholder="Write your heartfelt message..."></textarea>
-                <label for="input-final-wish">Final Wish</label>
-                <textarea id="input-final-wish" rows="5" placeholder="Your birthday wish..."></textarea>
-                <hr style="margin:20px 0;border:none;border-top:1px solid #e5e7eb" />
-                <label>Photos (upload multiple)</label>
-                <input id="input-photos" type="file" accept="image/*" multiple />
-                <div id="photo-list"></div>
-                <label for="input-gallery-caption">Gallery Caption</label>
-                <input id="input-gallery-caption" type="text" placeholder="Our special memories..." />
-                <label for="input-gallery-mode">Gallery Mode</label>
-                <select id="input-gallery-mode">
-                    <option value="slideshow">Slideshow</option>
-                    <option value="grid">Grid Gallery</option>
-                </select>
-                <label for="input-quotes">Quotes (one per line)</label>
-                <textarea id="input-quotes" rows="3" placeholder="Add romantic quotes, one per line..."></textarea>
+                <h3 style="margin:0 0 16px 0;font-size:20px;font-weight:700;color:#ec4899;">✨ Customize Your Gift</h3>
+                <label for="greeting-input">Greeting Message</label>
+                <input id="greeting-input" type="text" placeholder="Happy Birthday to my dear..." />
+                
+                <label for="heading-input">Birthday Heading</label>
+                <input id="heading-input" type="text" placeholder="Happy Birthday!" />
+                
+                <label for="message-input">Main Message</label>
+                <textarea id="message-input" rows="4" placeholder="Write your heartfelt message..."></textarea>
+                
+                <label for="wish-input">Final Wish</label>
+                <textarea id="wish-input" rows="4" placeholder="Your birthday wish..."></textarea>
+                
+                <label for="quote-input">Quotes (one per line)</label>
+                <textarea id="quote-input" rows="3" placeholder="Add romantic quotes..."></textarea>
+                
                 <div id="editor-actions">
-                    <button class="editor-btn editor-ghost" id="editor-cancel">Cancel</button>
-                    <button class="editor-btn editor-ghost" id="editor-download">&#8681; Download</button>
-                    <button class="editor-btn editor-primary" id="editor-apply">Apply &amp; Save</button>
+                    <button class="editor-btn editor-ghost" id="close-editor">Cancel</button>
+                    <button class="editor-btn editor-primary" id="save-editor">✓ Save Changes</button>
                 </div>
             </div>
         </div>
-        <div id="photo-viewer">
-            <button id="photo-viewer-close">&times;</button>
-            <img id="viewer-img" src="" alt="Full size photo" />
-        </div>
+        
         <div id="progress-container">
             <div id="progress-bar"></div>
         </div>
+        
         <div id="content">
             <!-- Step 1 -->
             <div class="step active" id="step1">
-                <div class="emoji heart-beat">&#10084;&#65039;</div>
-                <h1 id="greeting" class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Happy Birthday to my dear Joysree, you are special to me</h1>
+                <div class="emoji heart-beat">❤️</div>
+                <h1 id="greeting" class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Happy Birthday Joysree!</h1>
                 <p id="intro-note" class="text-xl text-gray-700 mb-8">I made something special just for you...</p>
-                <blockquote id="quote" class="text-base text-gray-600 italic mb-6 opacity-80">Add your quotes in the editor to see them here.</blockquote>
-                <button class="btn" id="start-btn">Let&#39;s Begin</button>
+                <blockquote id="quote" class="text-base text-gray-600 italic mb-6 opacity-80">Add quotes to see them rotating here.</blockquote>
+                <button class="btn" id="start-btn">Let's Begin 🎉</button>
             </div>
+            
             <!-- Step 2 -->
             <div class="step" id="step2">
-                <div class="emoji">&#127881;</div>
-                <h2 id="birthday-heading" class="text-3xl md:text-4xl font-bold mb-6 text-gradient">Happy Birthday to you, dear!</h2>
-                <div style="max-height: 45vh; overflow-y: auto; padding-right: 8px;">
-                    <p id="birthday-message" class="text-base text-gray-700 mb-6" style="white-space:pre-wrap;line-height:1.7">
-                        &#2474;&#2495;&#2479;&#2412; &#2468;&#2479;&#2494;&#2480; &#2476;&#2495;&#2486;&#2503;&#2487; &#2470;&#2495;&#2472;, &#2468;&#2479;&#2494;&#2480; &#2460;&#2472;&#2509;&#2478;&#2470;&#2496;&#2472;&#2404;
-                        &#2488;&#2503; &#2470;&#2495;&#2476;&#2463;&#2495; &#2503;&#2474;&#2503;&#2479;&#2494; &#2464;&#2497;&#2480; &#2478;&#2472;&#2503; &#2488;&#2494;&#2467; &#2453;&#2479;&#2472;&#2509;&#2476;&#2495;&#2487; &#2468;&#2494;&#2480; &#2474;&#2494;&#2480;&#2494; &#2460;&#2494;&#2455;&#2503;&#2404;
-                        &#2479;&#2503;&#2472; &#2464;&#2497;&#2480; &#2447;&#2468;&#2480;&#2509;&#2478;&#2489;&#2494;&#2488;&#2497;&#2467;&#2487;&#2489;&#2494; &#2470;&#2495;&#2476;&#2503; &#2478;&#2472;&#2503; &#2463;&#2494;&#2472;&#2494;&#2404;
-
-                        &#2468;&#2497;&#2478;&#2495; &#2489;&#2463;&#2503; &#2453;&#2474;&#2503;&#2478;&#2509;&#2476; &#2447;&#2472;&#2497;&#2475; &#2453;&#2480;&#2503;&#2472;,
-                        &#2453;&#2495;&#2472;&#2509;&#2460;&#2497; &#2468;&#2479;&#2494;&#2480; &#2474;&#2494;&#2478;&#2463;&#2495; &#2460;&#2494;&#2455;&#2503; &#2468;&#2497;&#2478;&#2494;&#2480; &#2474;&#2494;&#2486;&#2503; &#2468;&#2494;&#2455;&#2503; &#2478;&#2494;&#2455;&#2494;&#2404;
-                        &#2479;&#2470;&#2497;&#2489;&#2503; &#2447;&#2453;&#2468;&#2494; &#2458;&#2494;&#2480;&#2503; &#2476;&#2499;&#2479;&#2495; &#2468;&#2494;&#2455;&#2503;,
-                        &#2468;&#2497;&#2478;&#2494;&#2480; &#2453;&#2465;&#2494; &#2464;&#2497;&#2480; &#2474;&#2494;&#2478;&#2503; &#2472;&#2496;&#2480;&#2494;&#2464;&#2480;&#2488; &#2478;&#2470;&#2503; &#2464;&#2494;&#2455;&#2503; &#2470;&#2495;&#2503;&#2404;
-
-                        &#2468;&#2497;&#2478;&#2494;&#2480; &#2474;&#2494;&#2486;&#2503; &#2465;&#2494;&#2453;&#2494; &#2447;&#2479;&#2494;&#2470;&#2503;&#2480; &#2453;&#2503;&#2472; &#2447;&#2453;&#2494;&#2476;&#2472;,
-                        &#2479;&#2494; &#2467;&#2460;&#2503; &#2467;&#2503;&#2480; &#2474;&#2497;&#2480;&#2503; &#2447;&#2458;&#2494;&#2472; &#2474;&#2527;&#2478;&#2503;&#2470;,
-                        &#2464;&#2503;&#2453;&#2494; &#2474;&#2497;&#2479;&#2503; &#2468;&#2497;&#2478;&#2495; &#2488;&#2482;&#2468;&#2503; &#2479;&#2494;&#2472;,
-                        &#2470;&#2503;&#2457;&#2507;&#2463;&#2503;&#2482; &#2464;&#2497;&#2478;&#2495; &#2488;&#2469;&#2503; &#2476;&#2499;&#2479; &#2474;&#2494;&#2455;&#2496;&#2472; &#2453;&#2503;&#2480; &#2447;&#2404;
-
-                        &#2468;&#2497;&#2478;&#2494;&#2480; &#2474;&#2494;&#2478;&#2503; &#2463;&#2494;&#2476;&#2503; &#2470;&#2495;&#2476; &#2463;&#2494;&#2455;&#2503; &#2478;&#2503;&#2482;&#2494; &#2474;&#2509;&#2480;&#2482;&#2498;&#2468;&#2495; &#2439;&#2478;&#2474;&#2464;&#2503;&#2480;&#2503;,
-                        &#2464;&#2495;&#2472;&#2503;&#2458;&#2496;&#2472; &#2474;&#2494;&#2478;&#2503; &#2309;&#2474;&#2472; &#2489;&#2463;&#2503; &#2453;&#2507;&#2472; &#2474;&#2498;&#2480;&#2496;&#2472;&#2503;&#2404;
-                        &#2468;&#2494;&#2480; &#2478;&#2503;&#2351;&#2503; &#2464;&#2495;&#2472;&#2503;&#2480; &#2447;&#2482;&#2494;&#2472;&#2503; &#2474;&#2494;&#2478;&#2503;&#2472; &#2470;&#2495;&#2476; &#2463;&#2494;&#2455;&#2503; &#2447;&#2458;&#2494;&#2472;&#2503;&#2470;&#2404;
-                    </p>
-                </div>
-                <button class="btn" id="next-btn-2">What Makes You Special?</button>
+                <div class="emoji">🎂</div>
+                <h2 id="heading" class="text-3xl md:text-4xl font-bold mb-6 text-gradient">Happy Birthday to You!</h2>
+                <p id="message" class="text-base text-gray-700 mb-6" style="white-space:pre-wrap;line-height:1.7">Your special day is here! Thank you for being the amazing person you are.</p>
+                <button class="btn" id="next-btn-2">What Makes You Special? →</button>
             </div>
+            
             <!-- Step 3 -->
             <div class="step" id="step3">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gradient">Here&#39;s Why You&#39;re Incredible</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gradient">Here's Why You're Incredible</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                     <div class="reason-card">
-                        <div class="emoji text-3xl">&#10024;</div>
+                        <div class="emoji text-3xl">✨</div>
                         <h3 class="text-xl font-bold mb-2" style="color:#db2777">Your Kindness</h3>
-                        <p class="text-gray-700">The way you care about others is truly inspiring. You have the biggest heart.</p>
+                        <p class="text-gray-700">The way you care about others is truly inspiring.</p>
                     </div>
                     <div class="reason-card">
-                        <div class="emoji text-3xl">&#128522;</div>
+                        <div class="emoji text-3xl">😊</div>
                         <h3 class="text-xl font-bold mb-2" style="color:#db2777">Your Smile</h3>
-                        <p class="text-gray-700">It lights up every room you enter and stays in my mind all day.</p>
+                        <p class="text-gray-700">It lights up every room you enter.</p>
                     </div>
                     <div class="reason-card">
-                        <div class="emoji text-3xl">&#127775;</div>
+                        <div class="emoji text-3xl">⭐</div>
                         <h3 class="text-xl font-bold mb-2" style="color:#db2777">Your Spirit</h3>
-                        <p class="text-gray-700">Your passion and energy are contagious. You make life exciting!</p>
+                        <p class="text-gray-700">Your passion makes life exciting!</p>
                     </div>
                 </div>
-                <button class="btn" id="next-btn-3">A Little Surprise</button>
+                <button class="btn" id="next-btn-3">A Little Surprise →</button>
             </div>
+            
             <!-- Step 4 -->
             <div class="step" id="step4">
-                <div class="emoji">&#128248;</div>
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">Remember When...</h2>
-                <div class="gallery-container bg-gradient-to-r from-pink-100 to-rose-100 rounded-2xl p-6 mb-6">
-                    <div id="photo-gallery" style="display:none;"></div>
-                    <div id="carousel" style="display:none;">
-                        <button id="carousel-prev" class="carousel-btn">&#8249;</button>
-                        <div style="overflow:hidden;border-radius:16px;">
-                            <div id="carousel-slides"></div>
-                        </div>
-                        <button id="carousel-next" class="carousel-btn">&#8250;</button>
-                        <div id="carousel-dots"></div>
+                <div class="emoji">📸</div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">Our Memories</h2>
+                <div class="bg-gradient-to-r from-pink-100 to-rose-100 rounded-2xl p-6 mb-6">
+                    <p id="gallery-caption" class="text-lg text-gray-700 italic mb-4">Your special moments matter.</p>
+                    <div id="photo-gallery" style="min-height: 200px; display: flex; align-items: center; justify-content: center;">
+                        <p class="text-gray-500">No photos yet. Edit to add!</p>
                     </div>
                 </div>
-                <p id="gallery-caption" class="text-lg text-gray-700 italic mb-2">Our special memories together</p>
-                <button class="btn" id="next-btn-4">One Last Thing</button>
+                <button class="btn" id="next-btn-4">One Last Thing →</button>
             </div>
+            
             <!-- Step 5 -->
             <div class="step" id="step5">
-                <div class="emoji">&#127874;</div>
+                <div class="emoji">🎁</div>
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">My Birthday Wish For You</h2>
-                <p class="text-lg text-gray-700 mb-6">May your year be filled with joy, laughter, and dreams come true.</p>
                 <div id="cake">
                     <div class="candles">
                         <div class="candle"><div class="flame"></div></div>
@@ -251,423 +198,203 @@
                     <div class="layer"></div>
                     <div class="layer"></div>
                 </div>
-                <div style="max-height: 30vh; overflow-y: auto; margin-bottom: 16px;">
-                    <p id="final-wish" class="text-base font-medium mb-6" style="white-space:pre-wrap;color:#be185d;line-height:1.8">
-                        &#2438;&#2460; &#2468;&#2507;&#2479;&#2494;&#2480; &#2460;&#2472;&#2509;&#2478;&#2470;&#2496;&#2472;&#2404;
-                        &#2488;&#2503; &#2470;&#2495;&#2476;&#2463;&#2495;&#2463;&#2494; &#2437;&#2503;&#2474;&#2503;&#2351;&#2503;&#2503; &#2478;&#2472;&#2503; &#2474;&#2467;&#2503; &#2479;&#2494;&#2451;&#2503;
-                        &#2488;&#2503;&#2480;, &#2464;&#2503;&#2464;&#2503; &#2459;&#2507;&#2453; &#2488;&#2503; &#2478;&#2497;&#2489;&#2479;&#2400;&#2464;&#2507;&#2458;&#2503;,
-                        &#2438;&#2474;&#2472; &#2464;&#2494;&#2472;&#2495; &#2470;&#2494;&#2439;&#2464;&#2467;&#2507; &#2463;&#2503;&#2479;&#2494;&#2464;&#2494; &#2453;&#2476;&#2468;&#2404;
-                        &#2453;&#2495;&#2472;&#2509;&#2460;&#2497; &#2458;&#2494;&#2480;&#2495; &#2438;&#2474;&#2472;&#2503;&#2453; &#2438;&#2470;&#2480;&#2507; &#2470;&#2495;&#2472;,
-                        &#2460;&#2468;&#248f;&#2503;&#2480; &#2460;&#2480;&#2494;&#2472;&#2503;&#2464;&#2503;&#2480; &#2489;&#2463;&#2503; &#2457;&#2453;&#2503; &#2478;&#2498;&#2478;&#2503;&#2478;&#2490;&#2404;
-                        &#2460;&#2496;&#2487;&#2472; &#2459;&#2503;&#2482;&#2503;&#2480;&#2439;&#2467;&#2507; &#2447;&#2478;&#2472; &#2437;&#2468;&#2503;&#2458;&#2468;&#2503; -
-                        &#2479;&#2503;&#2474;&#2472;&#2503;&#2489;&#2479;&#2503; &#2474;&#2497;&#2468;&#2503;&#2478;&#2490;&#2503; &#2470;&#2496;&#2472;&#2503; &#2474;&#2494;&#2478;&#2503;&#2470;&#2495; &#2451;&#2470;&#2494;&#2480;&#2497;&#2477;&#2497;&#2470; &#2474;&#2494;&#2476;&#2503;&#2458;&#2503;&#2480; &#2495;&#2477; &#2464;&#2494;&#2455;&#2503; &#2470;&#2495;&#2503;...
-                    </p>
-                </div>
-                <button class="btn" id="blow-btn">Blow the Candles</button>
-                <button class="btn" id="confetti-btn" style="display:none;">Celebrate!</button>
-                <p class="mt-6 text-gray-500 text-sm">Made with &#10084;&#65039; just for you</p>
+                <p id="wish" class="text-base font-medium mb-6" style="white-space:pre-wrap;color:#be185d;line-height:1.8">May your year be filled with joy, love, and endless happiness!</p>
+                <button class="btn" id="blow-btn">Blow the Candles 🕯️</button>
+                <button class="btn" id="confetti-btn" style="display:none;">Celebrate! 🎉</button>
+                <p class="mt-6 text-gray-500 text-sm">Made with ❤️ just for you</p>
             </div>
         </div>
     </div>
+
     <script>
     (function() {
         'use strict';
 
-        // ==================== THREE.JS HEARTS BACKGROUND ====================
+        // ==================== THREE.JS HEARTS ====================
         var container = document.getElementById('canvas-container');
-        var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        container.appendChild(renderer.domElement);
-
-        var scene = new THREE.Scene();
-        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        camera.position.z = 30;
-
-        var heartShape = new THREE.Shape();
-        heartShape.moveTo(0.5, 0.5);
-        heartShape.bezierCurveTo(0.5, 0.5, 1, 0, 0, 0);
-        heartShape.bezierCurveTo(-1, 0, -1, 1.5, -1, 1.5);
-        heartShape.bezierCurveTo(-1, 2.5, 0.5, 3.5, 0.5, 3.5);
-        heartShape.bezierCurveTo(0.5, 3.5, 2, 2.5, 2, 1.5);
-        heartShape.bezierCurveTo(2, 1.5, 2, 0, 1, 0);
-        heartShape.bezierCurveTo(0.5, 0, 0.5, 0.5, 0.5, 0.5);
-
-        var heartGeo = new THREE.ExtrudeGeometry(heartShape, { depth: 0.5, bevelEnabled: true, bevelSegments: 3, bevelSize: 0.2, bevelThickness: 0.3 });
-        var hearts = [];
-        var colors = [0xff6b6b, 0xff8e8e, 0xffb3b3, 0xff9e9e, 0xffc1c1, 0xff6b8e];
-
-        for (var i = 0; i < 20; i++) {
-            var mat = new THREE.MeshPhongMaterial({ color: colors[Math.floor(Math.random() * colors.length)], emissive: 0xff0000, emissiveIntensity: 0.05, shininess: 80, transparent: true, opacity: 0.85 });
-            var h = new THREE.Mesh(heartGeo, mat);
-            h.position.set((Math.random() - 0.5) * 50, (Math.random() - 0.5) * 50, (Math.random() - 0.5) * 50);
-            var s = Math.random() * 0.8 + 0.4;
-            h.scale.set(s, s, s);
-            h.rotation.set(Math.random() * Math.PI, Math.random() * Math.PI, 0);
-            h.userData = { sx: Math.random() * 0.02 - 0.01, sy: Math.random() * 0.02 - 0.01, sz: Math.random() * 0.02 - 0.01, rx: Math.random() * 0.01, ry: Math.random() * 0.01 };
-            scene.add(h);
-            hearts.push(h);
-        }
-
-        scene.add(new THREE.AmbientLight(0xffffff, 0.6));
-        var dl = new THREE.DirectionalLight(0xffffff, 0.8);
-        dl.position.set(1, 1, 1);
-        scene.add(dl);
-
-        function animate() {
-            requestAnimationFrame(animate);
-            var t = Date.now() * 0.001;
-            hearts.forEach(function(h) {
-                h.position.x += Math.sin(t * h.userData.sx * 10) * 0.05;
-                h.position.y += Math.sin(t * h.userData.sy * 10) * 0.05;
-                h.rotation.x += h.userData.rx;
-                h.rotation.y += h.userData.ry;
-            });
-            renderer.render(scene, camera);
-        }
-        animate();
-
-        window.addEventListener('resize', function() {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
+        try {
+            var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
             renderer.setSize(window.innerWidth, window.innerHeight);
-        });
+            container.appendChild(renderer.domElement);
+
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 30;
+
+            var heartShape = new THREE.Shape();
+            heartShape.moveTo(0.5, 0.5);
+            heartShape.bezierCurveTo(0.5, 0.5, 1, 0, 0, 0);
+            heartShape.bezierCurveTo(-1, 0, -1, 1.5, -1, 1.5);
+            heartShape.bezierCurveTo(-1, 2.5, 0.5, 3.5, 0.5, 3.5);
+            heartShape.bezierCurveTo(0.5, 3.5, 2, 2.5, 2, 1.5);
+            heartShape.bezierCurveTo(2, 1.5, 2, 0, 1, 0);
+            heartShape.bezierCurveTo(0.5, 0, 0.5, 0.5, 0.5, 0.5);
+
+            var heartGeo = new THREE.ExtrudeGeometry(heartShape, { depth: 0.5, bevelEnabled: true, bevelSegments: 3, bevelSize: 0.2, bevelThickness: 0.3 });
+            var hearts = [];
+            var colors = [0xff6b6b, 0xff8e8e, 0xffb3b3, 0xff9e9e, 0xffc1c1, 0xff6b8e];
+
+            for (var i = 0; i < 20; i++) {
+                var mat = new THREE.MeshPhongMaterial({ color: colors[Math.floor(Math.random() * colors.length)], emissive: 0xff0000, emissiveIntensity: 0.05, shininess: 80, transparent: true, opacity: 0.8 });
+                var h = new THREE.Mesh(heartGeo, mat);
+                h.position.set((Math.random() - 0.5) * 50, (Math.random() - 0.5) * 50, (Math.random() - 0.5) * 50);
+                var s = Math.random() * 0.8 + 0.4;
+                h.scale.set(s, s, s);
+                h.rotation.set(Math.random() * Math.PI, Math.random() * Math.PI, 0);
+                h.userData = { sx: Math.random() * 0.02 - 0.01, sy: Math.random() * 0.02 - 0.01, sz: Math.random() * 0.02 - 0.01, rx: Math.random() * 0.01, ry: Math.random() * 0.01 };
+                scene.add(h);
+                hearts.push(h);
+            }
+
+            scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+            var dl = new THREE.DirectionalLight(0xffffff, 0.8);
+            dl.position.set(1, 1, 1);
+            scene.add(dl);
+
+            function animate() {
+                requestAnimationFrame(animate);
+                var t = Date.now() * 0.001;
+                hearts.forEach(function(h) {
+                    h.position.x += Math.sin(t * h.userData.sx * 10) * 0.05;
+                    h.position.y += Math.sin(t * h.userData.sy * 10) * 0.05;
+                    h.rotation.x += h.userData.rx;
+                    h.rotation.y += h.userData.ry;
+                });
+                renderer.render(scene, camera);
+            }
+            animate();
+
+            window.addEventListener('resize', function() {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+        } catch(e) { console.error('Three.js error:', e); }
+
+        // ==================== STATE & STORAGE ====================
+        var state = {
+            currentStep: 1,
+            greeting: localStorage.getItem('greeting') || 'Happy Birthday Joysree!',
+            heading: localStorage.getItem('heading') || 'Happy Birthday to You!',
+            message: localStorage.getItem('message') || 'Your special day is here! Thank you for being amazing.',
+            wish: localStorage.getItem('wish') || 'May your year be filled with joy, love, and endless happiness!',
+            quotes: (localStorage.getItem('quotes') || '').split('||').filter(Boolean)
+        };
+
+        function saveState() {
+            localStorage.setItem('greeting', state.greeting);
+            localStorage.setItem('heading', state.heading);
+            localStorage.setItem('message', state.message);
+            localStorage.setItem('wish', state.wish);
+            localStorage.setItem('quotes', state.quotes.join('||'));
+        }
+
+        function updateUI() {
+            document.getElementById('greeting').textContent = state.greeting;
+            document.getElementById('heading').textContent = state.heading;
+            document.getElementById('message').textContent = state.message;
+            document.getElementById('wish').textContent = state.wish;
+        }
+
+        updateUI();
 
         // ==================== STEP NAVIGATION ====================
-        var currentStep = 1;
-        var totalSteps = 5;
-
         function updateProgress() {
-            document.getElementById('progress-bar').style.width = ((currentStep - 1) / (totalSteps - 1) * 100) + '%';
+            document.getElementById('progress-bar').style.width = ((state.currentStep - 1) / 4 * 100) + '%';
         }
 
         function showStep(n) {
             document.querySelectorAll('.step').forEach(function(s) { s.classList.remove('active'); });
-            var el = document.getElementById('step' + n);
-            el.classList.add('active');
-            if (typeof gsap === 'object') {
-                gsap.fromTo(el, { y: 25, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out' });
-            }
+            document.getElementById('step' + n).classList.add('active');
+            state.currentStep = n;
             updateProgress();
-            if (n === 4) {
-                populateGallery(true);
+            if (typeof gsap !== 'undefined') {
+                gsap.fromTo('#step' + n, { y: 25, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out' });
             }
         }
 
-        document.getElementById('start-btn').addEventListener('click', function() {
-            currentStep = 2;
-            showStep(currentStep);
+        document.getElementById('start-btn').addEventListener('click', function() { showStep(2); });
+        document.getElementById('next-btn-2').addEventListener('click', function() { showStep(3); });
+        document.getElementById('next-btn-3').addEventListener('click', function() { showStep(4); });
+        document.getElementById('next-btn-4').addEventListener('click', function() { showStep(5); });
+
+        // ==================== EDITOR ====================
+        var modal = document.getElementById('editor-modal');
+        document.getElementById('edit-toggle').addEventListener('click', function() {
+            document.getElementById('greeting-input').value = state.greeting;
+            document.getElementById('heading-input').value = state.heading;
+            document.getElementById('message-input').value = state.message;
+            document.getElementById('wish-input').value = state.wish;
+            document.getElementById('quote-input').value = state.quotes.join('\n');
+            modal.classList.add('show');
         });
 
-        document.getElementById('next-btn-2').addEventListener('click', function() {
-            currentStep = 3;
-            showStep(currentStep);
+        document.getElementById('close-editor').addEventListener('click', function() {
+            modal.classList.remove('show');
         });
 
-        document.getElementById('next-btn-3').addEventListener('click', function() {
-            currentStep = 4;
-            showStep(currentStep);
+        document.getElementById('save-editor').addEventListener('click', function() {
+            state.greeting = document.getElementById('greeting-input').value || state.greeting;
+            state.heading = document.getElementById('heading-input').value || state.heading;
+            state.message = document.getElementById('message-input').value || state.message;
+            state.wish = document.getElementById('wish-input').value || state.wish;
+            state.quotes = document.getElementById('quote-input').value.split('\n').map(function(q) { return q.trim(); }).filter(Boolean);
+            
+            saveState();
+            updateUI();
+            modal.classList.remove('show');
+            
+            // Show random quote
+            if (state.quotes.length > 0) {
+                document.getElementById('quote').textContent = state.quotes[Math.floor(Math.random() * state.quotes.length)];
+            }
         });
 
-        document.getElementById('next-btn-4').addEventListener('click', function() {
-            currentStep = 5;
-            showStep(currentStep);
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) modal.classList.remove('show');
         });
 
-        // ==================== CONFETTI ====================
-        document.getElementById('confetti-btn').addEventListener('click', function() {
-            if (typeof confetti !== 'function') return;
-            confetti({ particleCount: 200, spread: 80, origin: { y: 0.6 }, colors: ['#ff0000', '#ff69b4', '#ff1493', '#ffc0cb'] });
-            setTimeout(function() { confetti({ particleCount: 40, spread: 60, origin: { y: 0.5 }, shapes: ['heart'], colors: ['#ff0000', '#ff69b4'] }); }, 300);
-            setTimeout(function() {
-                confetti({ particleCount: 25, angle: 60, spread: 55, origin: { x: 0 }, shapes: ['heart'], colors: ['#ff0000', '#ff69b4'] });
-                confetti({ particleCount: 25, angle: 120, spread: 55, origin: { x: 1 }, shapes: ['heart'], colors: ['#ff0000', '#ff69b4'] });
-            }, 600);
-        });
-
-        // ==================== BLOW CANDLES ====================
+        // ==================== ANIMATIONS ====================
         document.getElementById('blow-btn').addEventListener('click', function() {
             var flames = document.querySelectorAll('.flame');
-            flames.forEach(function(f, idx) {
-                gsap.to(f, { opacity: 0, y: -8, duration: 1 + idx * 0.1, ease: 'power2.out' });
-            });
-            gsap.fromTo('#cake', { scale: 0.95 }, { scale: 1, duration: 0.6, ease: 'elastic.out(1,0.5)' });
-            if (typeof confetti === 'function') {
-                confetti({ particleCount: 80, spread: 90, origin: { y: 0.65 }, colors: ['#ff69b4', '#ffb6c1', '#ffd1dc'] });
+            if (typeof gsap !== 'undefined') {
+                flames.forEach(function(f, idx) {
+                    gsap.to(f, { opacity: 0, y: -8, duration: 1 + idx * 0.1, ease: 'power2.out' });
+                });
+                gsap.fromTo('#cake', { scale: 0.95 }, { scale: 1, duration: 0.6, ease: 'elastic.out(1,0.5)' });
             }
             this.style.display = 'none';
             document.getElementById('confetti-btn').style.display = 'inline-block';
-            hearts.forEach(function(h) {
-                gsap.to(h.position, { y: h.position.y - 15, duration: 3, ease: 'power1.out' });
-            });
+            if (typeof confetti !== 'undefined') {
+                confetti({ particleCount: 80, spread: 90, origin: { y: 0.65 }, colors: ['#ff69b4', '#ffb6c1', '#ffd1dc'] });
+            }
         });
 
-        // ==================== PHOTO STORE ====================
-        var initialPhotos = ['IMG-20251029-WA0123.jpg'];
-
-        function loadPhotos() {
-            try {
-                var s = JSON.parse(localStorage.getItem('edit:photos') || 'null');
-                if (Array.isArray(s) && s.length) return s;
-            } catch (e) {}
-            return initialPhotos.map(function(f, i) { return { id: 'init-' + i, dataUrl: f }; });
-        }
-
-        function savePhotos(arr) {
-            try { localStorage.setItem('edit:photos', JSON.stringify(arr)); } catch (e) {}
-        }
-
-        // ==================== GALLERY ====================
-        var gallery = document.getElementById('photo-gallery');
-        var carousel = document.getElementById('carousel');
-        var viewer = document.getElementById('photo-viewer');
-        var viewerImg = document.getElementById('viewer-img');
-
-        function openViewer(idx) {
-            var photos = loadPhotos();
-            if (!photos[idx]) return;
-            viewerImg.src = photos[idx].dataUrl;
-            viewer.style.display = 'flex';
-        }
-
-        viewer.addEventListener('click', function() { viewer.style.display = 'none'; });
-        document.getElementById('photo-viewer-close').addEventListener('click', function() { viewer.style.display = 'none'; });
-
-        function populateGallery(anim) {
-            var photos = loadPhotos();
-            var mode = localStorage.getItem('edit:galleryMode') || 'slideshow';
-            gallery.innerHTML = '';
-            photos.forEach(function(p, i) {
-                var img = document.createElement('img');
-                img.src = p.dataUrl;
-                img.className = 'gallery-img';
-                img.alt = 'photo ' + (i + 1);
-                (function(idx) {
-                    img.addEventListener('click', function() { openViewer(idx); });
-                })(i);
-                gallery.appendChild(img);
-            });
-            if (anim && typeof gsap === 'object') {
-                gsap.fromTo('.gallery-img', { opacity: 0, y: 15 }, { opacity: 1, y: 0, stagger: 0.08, duration: 0.6, ease: 'power2.out' });
+        document.getElementById('confetti-btn').addEventListener('click', function() {
+            if (typeof confetti !== 'undefined') {
+                confetti({ particleCount: 200, spread: 80, origin: { y: 0.6 }, colors: ['#ff0000', '#ff69b4', '#ff1493', '#ffc0cb'] });
+                setTimeout(function() { confetti({ particleCount: 40, spread: 60, origin: { y: 0.5 }, shapes: ['heart'], colors: ['#ff0000', '#ff69b4'] }); }, 300);
             }
-            if (mode === 'grid') {
-                gallery.style.display = 'flex';
-                carousel.style.display = 'none';
-                stopTimer();
-            } else {
-                gallery.style.display = 'none';
-                carousel.style.display = 'block';
-                prepCarousel();
-            }
-        }
-
-        // ==================== CAROUSEL ====================
-        var ci = 0;
-        var timer = null;
-
-        function prepCarousel() {
-            var photos = loadPhotos();
-            var slides = document.getElementById('carousel-slides');
-            var dots = document.getElementById('carousel-dots');
-            slides.innerHTML = '';
-            dots.innerHTML = '';
-            if (!photos.length) return;
-            photos.forEach(function(p, i) {
-                var slide = document.createElement('div');
-                slide.className = 'carousel-slide';
-                slide.innerHTML = '<img src="' + p.dataUrl + '" alt="slide" />';
-                slides.appendChild(slide);
-                var dot = document.createElement('button');
-                if (i === 0) dot.classList.add('active');
-                (function(idx) {
-                    dot.addEventListener('click', function() { goTo(idx); });
-                })(i);
-                dots.appendChild(dot);
-            });
-            move(0, false);
-            document.getElementById('carousel-prev').addEventListener('click', function() { goTo(ci - 1); });
-            document.getElementById('carousel-next').addEventListener('click', function() { goTo(ci + 1); });
-            startTimer();
-        }
-
-        function move(i, an) {
-            var slides = document.getElementById('carousel-slides');
-            var n = slides.children.length;
-            if (!n) return;
-            ci = ((i % n) + n) % n;
-            var x = -ci * 100;
-            if (typeof gsap === 'object' && an) {
-                gsap.to(slides, { xPercent: x, duration: 0.7, ease: 'power3.out' });
-            } else {
-                slides.style.transform = 'translateX(' + x + '%)';
-            }
-            var allDots = document.querySelectorAll('#carousel-dots button');
-            allDots.forEach(function(b, idx) { b.classList.toggle('active', idx === ci); });
-        }
-
-        function goTo(i) { move(i, true); startTimer(); }
-        function startTimer() { stopTimer(); timer = setInterval(function() { move(ci + 1, true); }, 4000); }
-        function stopTimer() { if (timer) { clearInterval(timer); timer = null; } }
-
-        // ==================== EDITOR ====================
-        var editToggle = document.getElementById('edit-toggle');
-        var edModal = document.getElementById('editor-modal');
-        var inGreeting = document.getElementById('input-greeting');
-        var inBHead = document.getElementById('input-birthday-heading');
-        var inBMsg = document.getElementById('input-birthday-message');
-        var inFWish = document.getElementById('input-final-wish');
-        var inPhotos = document.getElementById('input-photos');
-        var photoList = document.getElementById('photo-list');
-        var inCap = document.getElementById('input-gallery-caption');
-        var inMode = document.getElementById('input-gallery-mode');
-        var inQuotes = document.getElementById('input-quotes');
-        var galCap = document.getElementById('gallery-caption');
-
-        function renderPhotoList() {
-            var photos = loadPhotos();
-            photoList.innerHTML = '';
-            photos.forEach(function(p, i) {
-                var d = document.createElement('div');
-                d.className = 'photo-thumb';
-                d.innerHTML = '<img src="' + p.dataUrl + '" alt="thumb" /><button class="photo-remove" data-idx="' + i + '">&#10005;</button>';
-                photoList.appendChild(d);
-            });
-            var removeButtons = photoList.querySelectorAll('.photo-remove');
-            removeButtons.forEach(function(b) {
-                b.addEventListener('click', function(e) {
-                    var idx = parseInt(e.currentTarget.getAttribute('data-idx'));
-                    var arr = loadPhotos();
-                    arr.splice(idx, 1);
-                    savePhotos(arr);
-                    renderPhotoList();
-                    populateGallery();
-                });
-            });
-        }
-
-        inPhotos.addEventListener('change', function(e) {
-            var files = Array.from(e.target.files || []);
-            if (!files.length) return;
-            var photos = loadPhotos();
-            var done = 0;
-            files.forEach(function(f) {
-                var r = new FileReader();
-                r.onload = function(ev) {
-                    photos.push({ id: Date.now() + Math.random(), dataUrl: ev.target.result });
-                    done++;
-                    if (done === files.length) {
-                        savePhotos(photos);
-                        renderPhotoList();
-                        populateGallery();
-                    }
-                };
-                r.readAsDataURL(f);
-            });
-            e.target.value = '';
         });
 
-        function openEd() {
-            inGreeting.value = localStorage.getItem('edit:greeting') || document.getElementById('greeting').textContent;
-            inBHead.value = localStorage.getItem('edit:birthdayHeading') || document.getElementById('birthday-heading').textContent;
-            inBMsg.value = localStorage.getItem('edit:birthdayMessage') || document.getElementById('birthday-message').textContent;
-            inFWish.value = localStorage.getItem('edit:finalWish') || document.getElementById('final-wish').textContent;
-            inCap.value = localStorage.getItem('edit:galleryCaption') || '';
-            inMode.value = localStorage.getItem('edit:galleryMode') || 'slideshow';
-            inQuotes.value = (localStorage.getItem('edit:quotes') || '').split('|||').filter(Boolean).join('\n');
-            renderPhotoList();
-            edModal.style.display = 'flex';
-        }
-
-        function closeEd() {
-            edModal.style.display = 'none';
-        }
-
-        editToggle.addEventListener('click', openEd);
-        document.getElementById('editor-cancel').addEventListener('click', closeEd);
-
-        document.getElementById('editor-apply').addEventListener('click', function() {
-            var g = inGreeting.value || 'Happy Birthday!';
-            var bh = inBHead.value || 'Happy Birthday!';
-            var bm = inBMsg.value || 'Wishing you all the best!';
-            var fw = inFWish.value || 'Happy Birthday!';
-            var gc = inCap.value || 'Our special memories';
-
-            document.getElementById('greeting').textContent = g;
-            document.getElementById('birthday-heading').textContent = bh;
-            document.getElementById('birthday-message').textContent = bm;
-            document.getElementById('final-wish').textContent = fw;
-            galCap.textContent = gc;
-
-            try {
-                localStorage.setItem('edit:greeting', g);
-                localStorage.setItem('edit:birthdayHeading', bh);
-                localStorage.setItem('edit:birthdayMessage', bm);
-                localStorage.setItem('edit:finalWish', fw);
-                localStorage.setItem('edit:galleryCaption', gc);
-                localStorage.setItem('edit:galleryMode', inMode.value || 'slideshow');
-                localStorage.setItem('edit:quotes', (inQuotes.value || '').split('\n').map(function(l) { return l.trim(); }).filter(Boolean).join('|||'));
-            } catch (e) {}
-
-            loadQuotes();
-            populateGallery(true);
-            closeEd();
-        });
-
-        document.getElementById('editor-download').addEventListener('click', function() {
-            var b = new Blob(['<!DOCTYPE html>\n' + document.documentElement.outerHTML], { type: 'text/html' });
-            var u = URL.createObjectURL(b);
-            var a = document.createElement('a');
-            a.href = u;
-            a.download = 'birthday-custom.html';
-            document.body.appendChild(a);
-            a.click();
-            a.remove();
-            URL.revokeObjectURL(u);
-        });
-
-        // ==================== QUOTES ====================
-        var qTimer = null;
-
-        function loadQuotes() {
-            var arr = (localStorage.getItem('edit:quotes') || '').split('|||').filter(Boolean);
-            var qEl = document.getElementById('quote');
-            if (!arr.length) {
-                qEl.textContent = 'Add your quotes in the editor.';
-                if (qTimer) clearInterval(qTimer);
-                return;
-            }
-            var idx = 0;
-            qEl.textContent = arr[idx];
-            if (qTimer) clearInterval(qTimer);
-            qTimer = setInterval(function() {
-                idx = (idx + 1) % arr.length;
-                if (typeof gsap === 'object') {
+        // Show initial quote if any
+        if (state.quotes.length > 0) {
+            var quoteIdx = 0;
+            document.getElementById('quote').textContent = state.quotes[quoteIdx];
+            setInterval(function() {
+                quoteIdx = (quoteIdx + 1) % state.quotes.length;
+                if (typeof gsap !== 'undefined') {
                     gsap.to('#quote', { opacity: 0, duration: 0.3, onComplete: function() {
-                        qEl.textContent = arr[idx];
+                        document.getElementById('quote').textContent = state.quotes[quoteIdx];
                         gsap.to('#quote', { opacity: 0.8, duration: 0.4 });
                     }});
                 } else {
-                    qEl.textContent = arr[idx];
+                    document.getElementById('quote').textContent = state.quotes[quoteIdx];
                 }
             }, 5000);
         }
 
-        // ==================== RESTORE ON LOAD ====================
-        (function restore() {
-            var g = localStorage.getItem('edit:greeting');
-            if (g) document.getElementById('greeting').textContent = g;
-            var bh = localStorage.getItem('edit:birthdayHeading');
-            if (bh) document.getElementById('birthday-heading').textContent = bh;
-            var bm = localStorage.getItem('edit:birthdayMessage');
-            if (bm) document.getElementById('birthday-message').textContent = bm;
-            var fw = localStorage.getItem('edit:finalWish');
-            if (fw) document.getElementById('final-wish').textContent = fw;
-            var gc = localStorage.getItem('edit:galleryCaption');
-            if (gc) galCap.textContent = gc;
-            populateGallery();
-            loadQuotes();
-            updateProgress();
-        })();
-
+        updateProgress();
     })();
     </script>
 </body>
